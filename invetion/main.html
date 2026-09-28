@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invitation</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Amiri & Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind Config for Custom Fonts and Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldDark: '#0B2920',
+                        emeraldGold: '#D4AF37',
+                        emeraldLight: '#133E31',
+                        champagne: '#F4E8C1',
+                        champagneDark: '#C5A86A'
+                    },
+                    fontFamily: {
+                        amiri: ['Amiri', 'serif'],
+                        cairo: ['Cairo', 'sans-serif'],
+                        kufi: ['Reem Kufi', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0B2920;
+            color: #F4E8C1;
+            overflow-x: hidden;
+        }
+       .gold-gradient-text {
+    background: linear-gradient(135deg, #FFF5D6 0%, #D4AF37 50%, #AA7C11 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* أضفنا هذا السطر لإلغاء التنبيه */
+}
+        .gold-border {
+            border-image: linear-gradient(to bottom, #D4AF37, #FFF5D6, #AA7C11) 1;
+        }
+        .gold-bg {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B2920;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-emeraldDark text-champagne selection:bg-emeraldGold selection:text-emeraldDark">
+
+
+</div>
+    <!-- Floating Gold Particles Container -->
+    <div id="musicBtn" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+    <!-- Music Player Toggle Floating Button -->
+    <div class="fixed top-6 left-6 z-50">
+        <button id="musicBtn" onclick="toggleMusic()" class="bg-emeraldLight/80 backdrop-blur-md border border-emeraldGold/50 text-emeraldGold p-3 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center gap-2 group">
+            <i id="musicIcon" class="fa-solid fa-music text-lg animate-pulse"></i>
+            <span class="text-xs font-kufi hidden md:inline-block max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap opacity-0 group-hover:opacity-150">الموسيقى الرومانسية</span>
+        </button>
+        <!-- Hidden Audio Element (Using web audio synth or ambient sound simulation to avoid external hotlinks) -->
+        <!-- عنصر الصوت المخفي -->
+<audio id="weddingAudio" loop>
+    <source src="imge/ahia2.mp3" type="audio/mp3">
+</audio>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 z-10">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emeraldLight/30 via-emeraldDark/80 to-emeraldDark -z-10"></div>
+        
+        <!-- Ornamental Frame -->
+        <div class="absolute inset-6 md:inset-12 border-2 border-emeraldGold/30 pointer-events-none rounded-2xl flex flex-col justify-between p-4">
+            <div class="flex justify-between w-full">
+                <i class="fa-solid fa-pagelines text-emeraldGold/60 text-xl transform -rotate-45"></i>
+                <i class="fa-solid fa-pagelines text-emeraldGold/60 text-xl transform rotate-45"></i>
+            </div>
+            <div class="flex justify-between w-full">
+                <i class="fa-solid fa-pagelines text-emeraldGold/60 text-xl transform -rotate-135"></i>
+                <i class="fa-solid fa-pagelines text-emeraldGold/60 text-xl transform rotate-135"></i>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6 animate-fade-in">
+            <span class="inline-block font-kufi tracking-widest text-emeraldGold uppercase text-sm md:text-base border-b border-emeraldGold/40 pb-1">
+                ببركة الله ورضاه ندعوكم لحضور زفافنا المبارك
+            </span>
+            
+           <!-- قسم أسماء العروسين -->
+<div class="py-8 text-center relative">
+    <h1 class="font-amiri font-bold gold-gradient-text" style="font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.6; padding: 10px 0;">
+        عَلِيّ <span class="text-champagne">&</span> ضُحًى
+    </h1>
+</div>
+
+            <p class="font-kufi text-champagne/80 text-lg md:text-xl max-w-xl mx-auto font-light leading-relaxed">
+                "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
+            </p>
+
+            <!-- <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-emeraldGold font-kufi text-base md:text-lg">
+                <div class="flex items-center gap-2 bg-emeraldLight/50 px-6 py-2.5 rounded-full border border-emeraldGold/30">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>الاثنين . 26 أكتوبر 2026</span>
+                </div>
+                <div class="flex items-center gap-2 bg-emeraldLight/50 px6 py-2.5 rounded-full border border-emeraldGold/30">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>قاعة قصر قارون</span>
+                </div>
+            </div> -->
+
+            <div class="pt-8">
+                <a href="#rsvp" class="inline-block bg-gradient-to-r from-emeraldGold to-champagneDark text-emeraldDark font-kufi font-bold px-8 py-3.5 rounded-full shadow-xl hover:scale-105 transition duration-300">
+                    تأكيد الحضور 
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 animate-bounce text-emeraldGold/70">
+            <a href="#countdown"><i class="fa-solid fa-chevron-down text-xl"></i></a>
+        </div>
+    </header>
+
+    <!-- Countdown Section -->
+<section id="countdown" class="py-16 px-4 bg-emeraldLight/40 backdrop-blur-md border-y border-emeraldGold/20 relative z-10">
+    <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2 class="font-amiri text-3xl md:text-4xl gold-gradient-text font-bold" style="font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.9; padding: 10px 0;"></h1>في انتظار لقياكم بفارغ الصبر</h1>
+        <p class="font-kufi text-champagne/70">العد التنازلي ليومنا السعيد:</p>
+        
+        <!-- مربعات الأعداد مع الـ IDs المطلوبة -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+            <div class="bg-emeraldDark/60 border border-emeraldGold/30 p-4 rounded-xl shadow-lg">
+                <span id="days" class="text-3xl md:text-4xl font-bold font-amiri gold-gradient-text block">00</span>
+                <span class="text-xs text-champagne/80 font-kufi mt-1 block">يوماً</span>
+            </div>
+            <div class="bg-emeraldDark/60 border border-emeraldGold/30 p-4 rounded-xl shadow-lg">
+                <span id="hours" class="text-3xl md:text-4xl font-bold font-amiri gold-gradient-text block">00</span>
+                <span class="text-xs text-champagne/80 font-kufi mt-1 block">ساعة</span>
+            </div>
+            <div class="bg-emeraldDark/60 border border-emeraldGold/30 p-4 rounded-xl shadow-lg">
+                <span id="minutes" class="text-3xl md:text-4xl font-bold font-amiri gold-gradient-text block">00</span>
+                <span class="text-xs text-champagne/80 font-kufi mt-1 block">دقيقة</span>
+            </div>
+            <div class="bg-emeraldDark/60 border border-emeraldGold/30 p-4 rounded-xl shadow-lg">
+                <span id="seconds" class="text-3xl md:text-4xl font-bold font-amiri gold-gradient-text block">00</span>
+                <span class="text-xs text-champagne/80 font-kufi mt-1 block">ثانية</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- كود الـ JavaScript الخاص بالعد التنازلي -->
+
+</section>
+
+    Love Story Timeline
+      <!-- <section class="py-20 px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+            <span class="font-kufi text-emeraldGold text-sm tracking-widest uppercase">قصة لقائنا</span>
+            <h2 class="font-amiri text-4xl md:text-5xl gold-gradient-text font-bold">محطات في رحلتنا</h2>
+            <div class="w-24 h-0.5 bg-emeraldGold mx-auto"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto relative border-r-2 border-emeraldGold/40 pr-6 mr-4 md:mr-auto space-y-12">
+         
+            <div class="relative group">
+                <div class="absolute -right-[31px] top-1.5 w-4 h-4 bg-emeraldGold rounded-full border-4 border-emeraldDark"></div>
+                <div class="bg-emeraldLight/30 border border-emeraldGold/30 p-6 rounded-2xl shadow-xl hover:border-emeraldGold transition duration-300">
+                    <span class="text-emeraldGold font-kufi text-sm">شتاء 2021</span>
+                    <h3 class="font-amiri text-2xl text-champagne font-bold mt-1">اللقاء الأول</h3>
+                    <p class="font-cairo text-champagne/80 mt-2">في تلك الايام تقدمنا للدراسه في كليه أدارة الاعمال في جامعه IAMS</p>
+                </div>
+            </div>
+
+           
+            <div class="relative group">
+                <div class="absolute -right-[31px] top-1.5 w-4 h-4 bg-emeraldGold rounded-full border-4 border-emeraldDark"></div>
+                <div class="bg-emeraldLight/30 border border-emeraldGold/30 p-6 rounded-2xl shadow-xl hover:border-emeraldGold transition duration-300">
+                    <span class="text-emeraldGold font-kufi text-sm">شتاء 2025</span>
+                    <h3 class="font-amiri text-2xl text-champagne font-bold mt-1">اول خطوة</h3>
+                    <p class="font-cairo text-champagne/80 mt-2">في بدايةالعام الدراسي الاخير و أثناء دفع مصاريف الفصل الدراسي ألاول تعرف عَلِيً على محمد الأخ الاصغر لضحى و تكونت بينهم صداقة جعلت علي يطلب الزواج من ضحى </p>
+                </div>
+            </div>
+
+            
+            <div class="relative group">
+                <div class="absolute -right-[31px] top-1.5 w-4 h-4 bg-emeraldGold rounded-full border-4 border-emeraldDark"></div>
+                <div class="bg-emeraldLight/30 border border-emeraldGold/30 p-6 rounded-2xl shadow-xl hover:border-emeraldGold transition duration-300">
+                    <span class="text-emeraldGold font-kufi text-sm">ربيع 2025</span>
+                    <h3 class="font-amiri text-2xl text-champagne font-bold mt-1"> التقدم الرسمي </h3>
+                    <p class="font-cairo text-champagne/80 mt-2">أقبل علي الي منزل ضحى للتقدم الرسمي </p>
+                </div>
+            </div>
+
+                <div class="relative group">
+                <div class="absolute -right-[31px] top-1.5 w-4 h-4 bg-emeraldGold rounded-full border-4 border-emeraldDark"></div>
+                <div class="bg-emeraldLight/30 border border-emeraldGold/30 p-6 rounded-2xl shadow-xl hover:border-emeraldGold transition duration-300">
+                    <span class="text-emeraldGold font-kufi text-sm">صيف 2025 بالتحديد في الاواخر من شهر 7</span>
+                    <h3 class="font-amiri text-2xl text-champagne font-bold mt-1"> الخطوبه</h3>
+                    <p class="font-cairo text-champagne/80 mt-2">يوم الخطوبه كان يوماً مثالياً من بدايته الي نهايته </p>
+                </div>
+
+                  <div style="padding: 30px ;" class="relative group">
+                <div class="absolute -right-[31px] top-1.5 w-4 h-4 bg-emeraldGold rounded-full border-4 border-emeraldDark"></div>
+                <div class="bg-emeraldLight/30 border border-emeraldGold/30 p-6 rounded-2xl shadow-xl hover:border-emeraldGold transition duration-300">
+                    <span class="text-emeraldGold font-kufi text-sm">خريف 2026 </span>
+                    <h3 class="font-amiri text-2xl text-champagne font-bold mt-1"> كتب الكتاب </h3>
+                    <p class="font-cairo text-champagne/80 mt-2">أنه اليوم المنتظر الأن</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Venue & Event Details -->
+    <section class="py-20 px-4 bg-emeraldLight/20 relative z-10 border-t border-emeraldGold/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <span class="font-kufi text-emeraldGold text-sm tracking-widest uppercase">تفاصيل كتب الكتاب</span>
+                <h2 class="font-amiri text-4xl md:text-5xl gold-gradient-text font-bold">المكان والزمان</h2>
+                <div class="w-24 h-0.5 bg-emeraldGold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Venue Info Card -->
+                <div class="bg-emeraldLight/40 border border-emeraldGold/40 p-8 rounded-3xl shadow-2xl space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emeraldGold/20 rounded-2xl flex items-center justify-center text-emeraldGold text-2xl">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-amiri text-2xl font-bold text-champagne"></h3>قاعة قصر قارون </h3>
+                            <p class="font-kufi text-sm text-emeraldGold">الفيوم - بحيرة قارون - قرية تونس</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-emeraldGold/20 font-cairo">
+                        <div class="flex justify-between items-center">
+                            <span class="text-champagne/70"><i class="fa-regular fa-clock ml-2 text-emeraldGold"></i> الاستقبال :</span>
+                            <span class="font-bold text-champagne">الواحدة ظهراً</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://maps.app.goo.gl/i2yGvFVjvJWU3k8b6" target="_blank" class="block w-full text-center bg-emeraldGold/20 hover:bg-emeraldGold/30 border border-emeraldGold text-emeraldGold font-kufi py-3 rounded-xl transition duration-300">
+                            <i class="fa-solid fa-map-location-dot ml-2"></i> فتح الموقع على خرائط جوجل
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive / Visual Map Card -->
+                <!-- Interactive / Visual Map Card -->
+<!-- Interactive / Linked Map Card -->
+<a href="https://maps.app.goo.gl/a9Fv99hGEsh8gGqV8" target="_blank" class="group block bg-emeraldLight/40 border border-emeraldGold/40 p-6 rounded-3xl shadow-2xl h-[350px] relative overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:border-emeraldGold/70">
+    
+    <!-- خلفية صورة للمكان (استبدل الرابط التالي برابط صورتك الحقيقية) -->
+    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" 
+         style="background-image: url('imge/qaron.png');">
+    </div>
+    
+    <!-- طبقة تعتيم خفيفة لضمان وضوح النص (Overlay) -->
+    <div class="absolute inset-0 bg-emeraldDark/70 transition-opacity duration-300 group-hover:bg-emeraldDark/60"></div>
+    
+    <!-- محتوى المربع -->
+    <div class="relative z-10 h-full flex flex-col justify-center items-center text-center space-y-3 px-4">
+        <div class="w-14 h-14 rounded-full bg-emeraldGold/20 border border-emeraldGold/40 flex items-center justify-center text-emeraldGold transition-colors duration-300 group-hover:bg-emeraldGold group-hover:text-emeraldDark">
+            <i class="fa-solid fa-map-location-dot text-2xl"></i>
+        </div>
+        <h4 class="font-amiri text-2xl font-bold gold-gradient-text">قاعة قصر البارون</h4>
+        <p class="font-cairo text-xs text-champagne/90 leading-relaxed">
+            اضغط هنا لعرض الموقع والاتجاهات على خرائط جوجل
+        </p>
+        
+        <!-- سهم صغير يظهر عند التحويم -->
+        <span class="text-emeraldGold opacity-0 transition-opacity duration-300 group-hover:opacity-100 pt-2">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+    </div>
+</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <!-- <section class="py-20 px-4 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <span class="font-kufi text-emeraldGold text-sm tracking-widest uppercase">لحظاتنا الخاصة</span>
+                <h2 class="font-amiri text-4xl md:text-5xl gold-gradient-text font-bold">معرض الصور</h2>
+                <div class="w-24 h-0.5 bg-emeraldGold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                Gallery Item 1 
+                <div class="group relative overflow-hidden rounded-2xl border border-emeraldGold/30 shadow-xl aspect-[4/5] bg-emeraldLight">
+                    <img src="https://placehold.co/600x750/133E31/D4AF37?text=Yousef+&+Jamila+1" alt="صورة الخطوبة" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x750/133E31/D4AF37?text=Photo'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emeraldDark via-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <span class="font-amiri text-xl text-emeraldGold">بداية الحكاية</span>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 
+                <div class="group relative overflow-hidden rounded-2xl border border-emeraldGold/30 shadow-xl aspect-[4/5] bg-emeraldLight">
+                    <img src="https://placehold.co/600x750/133E31/D4AF37?text=Yousef+&+Jamila+2" alt="ذكرى سعيدة" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x750/133E31/D4AF37?text=Photo'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emeraldDark via-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <span class="font-amiri text-xl text-emeraldGold">سويّاً للأبد</span>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 
+                <div class="group relative overflow-hidden rounded-2xl border border-emeraldGold/30 shadow-xl aspect-[4/5] sm:col-span-2 md:col-span-1 bg-emeraldLight">
+                    <img src="https://placehold.co/600x750/133E31/D4AF37?text=Yousef+&+Jamila+3" alt="أجمل اللحظات" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/600x750/133E31/D4AF37?text=Photo'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emeraldDark via-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <span class="font-amiri text-xl text-emeraldGold">فرحة العمر</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+                      !-->
+    <!-- RSVP Form Section -->
+    <section id="rsvp" class="py-20 px-4 bg-emeraldLight/30 border-t border-emeraldGold/20 relative z-10">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-12 space-y-4">
+                <span class="font-kufi text-emeraldGold text-sm tracking-widest uppercase">تأكيد الحضور</span>
+                <h2 style="padding: 50px;" class="font-amiri text-5xl md:text-5xl gold-gradient-text font-bold">هل تُشرفنا بحضورك؟</h2>
+                <div class="w-24 h-0.5 bg-emeraldGold mx-auto"></div>
+            </div>
+
+            <form id="rsvpForm" onsubmit="handleRSVP(event)" class="bg-emeraldDark/90 border border-emeraldGold/40 p-8 rounded-3xl shadow-2xl space-y-6">
+                <div>
+                    <label class="block font-kufi text-sm text-champagne mb-2" for="guestName">اسم الضيف الكريم:</label>
+                    <input type="text" id="guestName" required class="w-full bg-emeraldLight/50 border border-emeraldGold/30 rounded-xl px-4 py-3 text-champagne focus:outline-none focus:border-emeraldGold transition" placeholder="الاسم ثلاثي">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-kufi text-sm text-champagne mb-2" for="attendance">حالة الحضور:</label>
+                        <select id="attendance" class="w-full bg-emeraldLight/50 border border-emeraldGold/30 rounded-xl px-4 py-3 text-champagne focus:outline-none focus:border-emeraldGold transition">
+                            <option value="attending">سأحضر بكل سرور</option>
+                            <option value="apologize">أعتذر عن عدم الحضور</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-kufi text-sm text-champagne mb-2" for="guestCount">عدد المرافقين:</label>
+                        <select id="guestCount" class="w-full bg-emeraldLight/50 border border-emeraldGold/30 rounded-xl px-4 py-3 text-champagne focus:outline-none focus:border-emeraldGold transition">
+                            <option value="1">وحده (شخص واحد)</option>
+                            <option value="2">شخصان</option>
+                            <option value="3">ثلاثة أشخاص</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+
+                <div>
+                    <label class="block font-kufi text-sm text-champagne mb-2" for="wishMessage">كلمة للعروسين (اختياري):</label>
+                    <textarea id="wishMessage" rows="3" class="w-full bg-emeraldLight/50 border border-emeraldGold/30 rounded-xl px-4 py-3 text-champagne focus:outline-none focus:border-emeraldGold transition" placeholder="اكتب مباركتك للعروسين هنا..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-emeraldGold to-champagneDark text-emeraldDark font-kufi font-bold py-4 rounded-xl shadow-xl hover:opacity-90 transition duration-300 text-lg">
+                    إرسال تأكيد الحضور
+                </button>
+            </form>
+
+            <!-- Success Message Box (Hidden by default) -->
+            <div id="successBox" class="hidden mt-6 bg-emeraldLight/80 border border-emeraldGold p-6 rounded-2xl text-center space-y-3">
+                <i class="fa-solid fa-circle-check text-4xl text-emeraldGold"></i>
+                <h3 class="font-amiri text-2xl font-bold text-champagne">شكراً لك!</h3>
+                <p class="font-cairo text-champagne/80">تم تسجيل ردك بنجاح. نتطلع لرؤيتك ومشاركتنا فرحتنا .</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-12 px-4 bg-emeraldDark text-center border-t border-emeraldGold/20 relative z-10">
+        <div class="max-w-xl mx-auto space-y-4">
+            <h2 class="font-amiri text-3xl gold-gradient-text font-bold"> </h2> علي & ضحى</h2>
+            <p class="font-kufi text-champagne/60 text-sm">ننتظركم بشوق لتكتمل فرحتنا بوجودكم المبارك.</p>
+            <div class="pt-4 flex justify-center gap-4 text-emeraldGold">
+                <span class="w-8 h-8 rounded-full border border-emeraldGold/40 flex items-center justify-center"><i class="fa-solid fa-heart text-xs"></i></span>
+                <span class="w-8 h-8 rounded-full border border-emeraldGold/40 flex items-center justify-center"><i class="fa-solid fa-rings-wedding text-xs"></i></span>
+            </div>
+            <p class="font-cairo text-xs text-champagne/40 pt-6">جميع الحقوق محفوظة © MOSAYED 2026 </p>
+        </div>
+    </footer>
+
+<script>
+    // 1. العد التنازلي لموعد الزفاف
+    const weddingTargetDate = new Date("October 26, 2026 00:00:00").getTime();
+    
+    const siteCountdownTimer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = weddingTargetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if(document.getElementById("days")) document.getElementById("days").innerText = days;
+        if(document.getElementById("hours")) document.getElementById("hours").innerText = hours;
+        if(document.getElementById("minutes")) document.getElementById("minutes").innerText = minutes;
+        if(document.getElementById("seconds")) document.getElementById("seconds").innerText = seconds;
+
+        if (distance < 0) {
+            clearInterval(siteCountdownTimer);
+        }
+    }, 1000);
+
+    // 2. إدارة تشغيل الموسيقى
+    let globalIsPlaying = false;
+    function toggleMusic() {
+        const audio = document.getElementById('weddingAudio') || document.getElementById('bgMusic');
+        const musicIcon = document.getElementById('musicIcon');
+        
+        if (!audio) return;
+
+        if (globalIsPlaying) {
+            audio.pause();
+            globalIsPlaying = false;
+            if (musicIcon) musicIcon.className = 'fa-solid fa-music text-lg';
+        } else {
+            audio.play().then(() => {
+                globalIsPlaying = true;
+                if (musicIcon) musicIcon.className = 'fa-solid fa-volume-high text-lg animate-pulse';
+            }).catch(err => {
+                console.log("التشغيل يتطلب تفاعلاً", err);
+            });
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem('playMusic') === 'true') {
+            const audio = document.getElementById('weddingAudio') || document.getElementById('bgMusic');
+            const musicIcon = document.getElementById('musicIcon');
+            if (audio) {
+                audio.play().then(() => {
+                    globalIsPlaying = true;
+                    if (musicIcon) musicIcon.className = 'fa-solid fa-volume-high text-lg animate-pulse';
+                }).catch(err => {});
+                localStorage.removeItem('playMusic');
+            }
+        }
+
+        // 3. إرسال الفورمة لجوجل شيت مع ضمان وصول رسالة المباركة كما كتبها المستخدم تماماً
+        const form = document.getElementById('rsvpForm');
+        const successBox = document.getElementById('successBox');
+
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = form.querySelector('button[type="submit"]');
+                if(submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.innerText = "جاري الإرسال...";
+                }
+
+                // سمط وقراءة البيانات مطابقة تماماً للـ IDs الموجودة في الـ HTML لديك
+                const nameVal = document.getElementById('guestName') ? document.getElementById('guestName').value : "";
+                const attendanceVal = document.getElementById('attendance') ? document.getElementById('attendance').value : "";
+                const guestCountVal = document.getElementById('guestCount') ? document.getElementById('guestCount').value : "1";
+                const wishMessageVal = document.getElementById('wishMessage') ? document.getElementById('wishMessage').value.trim() : "";
+
+                const formData = {
+                    data: [{
+                        "Name": nameVal,
+                        "Attendance": attendanceVal,
+                        "Companions": guestCountVal,
+                        "Message": wishMessageVal !== "" ? wishMessageVal : "لا توجد رسالة"
+                    }]
+                };
+
+                // ⚠️ ضع رابط الـ API الخاص بـ SheetDB هنا
+                const SHEETDB_API = 'https://sheetdb.io/api/v1/gp8rbm8l9q13b';
+
+                fetch(SHEETDB_API, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    form.style.display = 'none';
+                    if(successBox) successBox.classList.remove('hidden');
+                })
+                .catch(error => {
+                    alert('حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.');
+                    if(submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "إرسال تأكيد الحضور";
+                    }
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>

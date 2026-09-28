@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invetion</title>
+    <!-- استدعاء Tailwind CSS و Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font-amiri { font-family: 'Amiri', serif; }
+        .font-cairo { font-family: 'Cairo', sans-serif; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF5D6 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-[#0b291d] min-h-screen flex items-center justify-center p-4">
+
+    <!-- شاشة الترحيب -->
+    <div class="text-center space-y-6 p-8 max-w-md w-full border border-[#D4AF37]/40 rounded-3xl shadow-2xl bg-[#11382b]/80 backdrop-blur-md">
+        
+        <!-- الصورة الدائرية -->
+       <!-- الصورة الدائرية القديمة ذات الإطار -->
+<div class="mx-auto mb-6 w-38 h-36 overflow-hidden flex items-center justify-center ">
+    <img src="imge/5atm.png" alt="صورة الزفاف" class="w-full h-full object-contain">
+</div>
+        
+       <!-- زر الدخول بتصميم ملكي واحترافي -->
+<a href="main.html" id="enterBtn" class="group relative inline-flex items-center justify-center w-full py-4 px-8 overflow-hidden rounded-2xl bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] p-[2px] shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(191,149,63,0.5)]">
+    <!-- خلفية الزر الداخلية -->
+    <span class="absolute inset-0 bg-[#0b291d] rounded-[14px] transition-all duration-300 group-hover:bg-opacity-80"></span>
+    
+    <!-- محتوى الزر (النص والأيقونة) -->
+    <span class="relative flex items-center justify-center gap-3 text-[#FCF6BA] font-amiri font-bold text-xl tracking-wider">
+        <span>الدخول للدعوة الكريمة</span>
+        <i class="fa-solid fa-wand-magic-sparkles text-[#BF953F] transition-transform duration-300 group-hover:rotate-45"></i>
+    </span>
+</a>
+    <script>
+        // حفظ أمر لتشغيل الموسيقى فور الانتقال لصفحة index.html
+        document.getElementById('enterBtn').addEventListener('click', function() {
+            localStorage.setItem('playMusic', 'true');
+        });
+    </script>
+</body>
+</html> 
